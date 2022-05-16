@@ -1,0 +1,37 @@
+@import "../variables/Variables.scss";
+
+.dropdown-wrapper {
+  font-family: $body-font;
+  width: 582px;
+  position: relative;
+
+  .dropdown-title {
+    background-color: $main-color;
+    color: $white-text;
+    border-radius: 10px;
+    padding: 13px 20px;
+    font-weight: 500;
+  }
+  .arrow-icon {
+    position: absolute;
+    top: 0.45em;
+    right: 0;
+    margin-right: 10px;
+  }
+
+  .dropdown-list {
+    position: relative;
+    z-index: -1;
+    list-style-type: none;
+    background-color: $grey-bg;
+    padding: 40px 20px;
+    margin-top: -2em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  li {
+    color: $main-color;
+    line-height: 1.6em;
+  }
+}

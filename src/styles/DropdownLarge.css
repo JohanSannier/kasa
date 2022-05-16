@@ -1,0 +1,32 @@
+.dropdown-large-wrapper {
+  font-family: "Montserrat", sans-serif;
+  width: 1023px;
+  position: relative;
+}
+
+.dropdown-large-wrapper .dropdown-large-title {
+  background-color: #ff6060;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 13px 20px;
+  font-weight: 500;
+}
+
+.dropdown-large-wrapper .arrow-icon {
+  position: absolute;
+  top: 0.45em;
+  right: 0;
+  margin-right: 10px;
+}
+
+.dropdown-large-wrapper .dropwdown-large-text {
+  position: relative;
+  z-index: -1;
+  margin-top: -2em;
+  color: #ff6060;
+  padding: 40px 20px 20px;
+  background-color: #f6f6f6;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/*# sourceMappingURL=DropdownLarge.css.map */

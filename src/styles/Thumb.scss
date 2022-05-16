@@ -1,0 +1,20 @@
+@import "../variables/Variables.scss";
+
+.thumb {
+  position: relative;
+  margin-top: 30px;
+  color: $white-text;
+  background: $bg-gradient;
+  background-color: $main-color;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+
+  .thumb-title {
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    font-family: $body-font;
+    font-weight: 500;
+  }
+}

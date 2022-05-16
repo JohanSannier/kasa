@@ -2,11 +2,7 @@ import React from "react";
 import "../styles/TagName.css";
 
 function TagName(props) {
-  return (
-    <div>
-      <span className="tag">Test</span>
-    </div>
-  );
+  return <span className="tag">tag-name</span>;
 }
 
 export default TagName;

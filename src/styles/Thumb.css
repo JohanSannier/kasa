@@ -1,0 +1,20 @@
+.thumb {
+  position: relative;
+  margin-top: 30px;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-color: #ff6060;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+}
+
+.thumb .thumb-title {
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+/*# sourceMappingURL=Thumb.css.map */
