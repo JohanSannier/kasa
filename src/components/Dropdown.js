@@ -3,17 +3,16 @@ import "../styles/Dropdown.css";
 import arrow_up from "../assets/arrow_up.png";
 
 function Dropdown(props) {
+  console.log(props.data);
+  const equipments = props.data.map((data) => {
+    return <li>{data.equipments}</li>;
+  });
+
   return (
     <div className="dropdown-wrapper">
       <p className="dropdown-title">Equipements</p>
       <img src={arrow_up} alt="" className="arrow-icon" />
-      <ul className="dropdown-list">
-        <li>Climatisation</li>
-        <li>Wi-Fi</li>
-        <li>Cuisine</li>
-        <li>Espace de travail</li>
-        <li>Cintres</li>
-      </ul>
+      <ul className="dropdown-list">{equipments}</ul>
     </div>
   );
 }
