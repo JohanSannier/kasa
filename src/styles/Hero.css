@@ -5,7 +5,7 @@
 
 .hero-banner img {
   display: block;
-  width: 80%;
+  width: 90%;
   height: 14rem;
   margin: auto;
   -o-object-fit: cover;
@@ -30,7 +30,7 @@
           transform: translate(-50%, -50%);
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
