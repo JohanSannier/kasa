@@ -1,0 +1,42 @@
+.hero-banner {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.hero-banner img {
+  display: block;
+  width: 80%;
+  height: 14rem;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  mix-blend-mode: darken;
+  -webkit-filter: contrast(50%);
+          filter: contrast(50%);
+}
+
+@media (max-width: 768px) {
+  .hero-banner img {
+    height: 7rem;
+  }
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=Hero.css.map */

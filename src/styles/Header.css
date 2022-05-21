@@ -8,9 +8,9 @@ nav {
   font-family: "Montserrat", sans-serif;
   color: #ff6060;
   font-weight: 500;
-  font-size: 1.5rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   margin-bottom: 3rem;
+  gap: 30px;
 }
 
 nav img {
@@ -20,14 +20,14 @@ nav img {
 nav a {
   text-decoration: none;
   color: inherit;
-  padding: 1rem 2rem;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   nav img {
     width: 145px;
   }

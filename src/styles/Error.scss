@@ -1,0 +1,40 @@
+@import "../variables/Variables.scss";
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: $body-font;
+  color: $main-color;
+
+  .error-404 {
+    font-weight: 700;
+    font-size: 18rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .error-text {
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin-bottom: 11.375rem;
+  }
+
+  a {
+    color: inherit;
+    font-weight: 500;
+    font-size: 1.175rem;
+    margin-bottom: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    .error-404 {
+      font-size: 7rem;
+    }
+
+    .error-text {
+      font-size: 1.5rem;
+    }
+  }
+}
