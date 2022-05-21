@@ -14,9 +14,11 @@
 
 .dropdown-wrapper .arrow-icon {
   position: absolute;
+  z-index: 10;
   top: 0.45em;
   right: 0;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .dropdown-wrapper .dropdown-list {
@@ -28,10 +30,15 @@
   margin-top: -2em;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  display: none;
 }
 
 .dropdown-wrapper li {
   color: #ff6060;
   line-height: 1.6em;
+}
+
+.test {
+  display: block;
 }
 /*# sourceMappingURL=Dropdown.css.map */

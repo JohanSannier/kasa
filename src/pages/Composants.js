@@ -15,8 +15,8 @@ export default function Composants() {
         <Link to="/appartment">Appartment</Link>
         <Link to="*">Error</Link>
       </nav>
-      <TagName />
-      <Thumb />
+      {/* <TagName />
+      <Thumb /> */}
       <Dropdown data={data} />
       <DropdownLarge />
       <Carousel />

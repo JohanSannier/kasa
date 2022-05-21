@@ -1,0 +1,35 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+nav img {
+  margin-right: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem 2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  nav img {
+    width: 145px;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

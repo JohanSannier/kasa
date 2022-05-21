@@ -1,0 +1,32 @@
+@import "../variables/Variables.scss";
+
+nav {
+  display: flex;
+  align-items: center;
+  font-family: $body-font;
+  color: $main-color;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+
+  img {
+    margin-right: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem 2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      width: 145px;
+    }
+  }
+}
