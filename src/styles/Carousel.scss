@@ -2,10 +2,10 @@
 
 .carousel-wrapper {
   position: relative;
-  width: 1215px;
-  height: 415px;
+  width: 90%;
+  margin: auto;
 
-  .temporary {
+  .carousel {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -15,9 +15,13 @@
 
   .next-photo,
   .previous-photo {
+    font-size: 4rem;
     position: absolute;
     top: 50%;
-    transform: translate(-50%);
+    transform: translateY(-50%);
+    color: white;
+    filter: drop-shadow(0 0 0.1rem #b1afaf);
+    cursor: pointer;
   }
 
   .next-photo {
@@ -25,7 +29,7 @@
   }
 
   .previous-photo {
-    left: 3em;
+    left: 0;
   }
 
   .photo-counter {

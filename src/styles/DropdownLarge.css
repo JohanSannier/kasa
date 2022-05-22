@@ -1,7 +1,9 @@
 .dropdown-large-wrapper {
   font-family: "Montserrat", sans-serif;
-  width: 1023px;
+  width: 70%;
   position: relative;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 .dropdown-large-wrapper .dropdown-large-title {

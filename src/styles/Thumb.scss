@@ -24,6 +24,10 @@
   border-radius: 10px;
   cursor: pointer;
 
+  &&:hover {
+    filter: drop-shadow(30px 10px 4px #4444dd);
+  }
+
   .thumb-title {
     position: absolute;
     bottom: 0;

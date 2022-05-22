@@ -2,8 +2,10 @@
 
 .dropdown-large-wrapper {
   font-family: $body-font;
-  width: 1023px;
+  width: 70%;
   position: relative;
+  margin: auto;
+  margin-bottom: 2rem;
 
   .dropdown-large-title {
     background-color: $main-color;

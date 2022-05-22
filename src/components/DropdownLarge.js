@@ -3,7 +3,7 @@ import "../styles/DropdownLarge.css";
 import arrow_up from "../assets/arrow_up.png";
 import arrow_down from "../assets/arrow_down.png";
 
-function DropdownLarge(props) {
+function DropdownLarge({ title, text }) {
   const [arrow, setArrow] = useState(arrow_up);
   let isReadable = false;
 
@@ -13,13 +13,9 @@ function DropdownLarge(props) {
   }
   return (
     <div className="dropdown-large-wrapper">
-      <p className="dropdown-large-title">Respect</p>
+      <p className="dropdown-large-title">{title}</p>
       <img src={arrow} alt="" className="arrow-icon" onClick={handleClick} />
-      <p className="dropwdown-large-text">
-        La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
-        comportement discriminatoire ou de perturbation du voisinage entraînera
-        une exclusion de notre plateforme.
-      </p>
+      <p className="dropwdown-large-text">{text}</p>
     </div>
   );
 }

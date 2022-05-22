@@ -1,0 +1,66 @@
+@import "../variables/Variables.scss";
+
+.details-wrapper {
+  font-family: $body-font;
+  color: $main-color;
+  width: 90%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+
+  .upper-details {
+    display: flex;
+  }
+
+  .left-details {
+    margin-right: auto;
+  }
+
+  .title-details {
+    font-weight: 500;
+    font-size: 2.25rem;
+  }
+
+  .location-details {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .tag-wrapper {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .landlord-details {
+    display: flex;
+    align-items: center;
+
+    .name-details {
+      text-align: end;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-right: 0.625rem;
+      line-height: 1.5rem;
+    }
+
+    .host-picture {
+      border-radius: 50%;
+      width: 4rem;
+    }
+  }
+
+  .stars-details {
+    margin-top: 1rem;
+    svg {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.bottom-details {
+  display: flex;
+  gap: 4.75rem;
+}

@@ -3,9 +3,9 @@ import "../styles/Dropdown.css";
 import arrow_up from "../assets/arrow_up.png";
 import arrow_down from "../assets/arrow_down.png";
 
-function Dropdown(props) {
+function Dropdown({ title, content }) {
   const [arrow, setArrow] = useState(arrow_up);
-  const [list, setlist] = useState("coco");
+  const [list, setlist] = useState("Exemple");
   // const equipments = props.data.map((data, index) => {
   //   return <li key={`item ${index}`}>{data.equipments}</li>;
   // });
@@ -21,9 +21,9 @@ function Dropdown(props) {
 
   return (
     <div className="dropdown-wrapper">
-      <p className="dropdown-title">Equipements</p>
+      <p className="dropdown-title">{title}</p>
       <img src={arrow} alt="" className="arrow-icon" onClick={handleClick} />
-      <ul className="dropdown-list"></ul>
+      <ul className="dropdown-list">{content}</ul>
       {list}
     </div>
   );

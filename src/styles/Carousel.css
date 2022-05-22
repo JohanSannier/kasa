@@ -1,10 +1,10 @@
 .carousel-wrapper {
   position: relative;
-  width: 1215px;
-  height: 415px;
+  width: 90%;
+  margin: auto;
 }
 
-.carousel-wrapper .temporary {
+.carousel-wrapper .carousel {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -16,10 +16,15 @@
 
 .carousel-wrapper .next-photo,
 .carousel-wrapper .previous-photo {
+  font-size: 4rem;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+  -webkit-filter: drop-shadow(0 0 0.1rem #b1afaf);
+          filter: drop-shadow(0 0 0.1rem #b1afaf);
+  cursor: pointer;
 }
 
 .carousel-wrapper .next-photo {
@@ -27,7 +32,7 @@
 }
 
 .carousel-wrapper .previous-photo {
-  left: 3em;
+  left: 0;
 }
 
 .carousel-wrapper .photo-counter {

@@ -1,0 +1,76 @@
+.details-wrapper {
+  font-family: "Montserrat", sans-serif;
+  color: #ff6060;
+  width: 90%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.details-wrapper .upper-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.details-wrapper .left-details {
+  margin-right: auto;
+}
+
+.details-wrapper .title-details {
+  font-weight: 500;
+  font-size: 2.25rem;
+}
+
+.details-wrapper .location-details {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.details-wrapper .tag-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.details-wrapper .landlord-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details-wrapper .landlord-details .name-details {
+  text-align: end;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-right: 0.625rem;
+  line-height: 1.5rem;
+}
+
+.details-wrapper .landlord-details .host-picture {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.details-wrapper .stars-details {
+  margin-top: 1rem;
+}
+
+.details-wrapper .stars-details svg {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.bottom-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4.75rem;
+}
+/*# sourceMappingURL=Details.css.map */
