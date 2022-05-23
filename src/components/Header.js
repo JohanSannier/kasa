@@ -10,7 +10,6 @@ function Header(props) {
         <img src={logo} alt="Logo de Kasa" />
         <Link to="/">Accueil</Link>
         <Link to="/about">A propos</Link>
-        <Link to="/appartment">Appartements</Link>
       </nav>
     </header>
   );

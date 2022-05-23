@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa";
 import "../styles/Details.css";
 
 function Details(props) {
-  let maxRating = 5;
+  let ratings = [1, 2, 3, 4, 5];
   const {
     id,
     title,
@@ -20,7 +20,20 @@ function Details(props) {
     tags,
   } = props.info;
 
-  //   maxRating - data.rating = nombre d'étoiles grisées -- data.rating = nombre d'étoiles rouges
+  const currentRating = ratings.find((element) => element == rating);
+  const filledStar = [];
+  const emptyStar = [];
+  const getRating = () => {
+    let maxRating = 5;
+    for (let i = 0; i < ratings[currentRating - 1]; i++) {
+      filledStar.push(<FaStar />);
+    }
+    for (let j = 0; j < ratings[maxRating - currentRating - 1]; j++) {
+      emptyStar.push(<FaRegStar />);
+    }
+  };
+  getRating();
+
   return (
     <section className="details-wrapper">
       <div className="upper-details">
@@ -36,16 +49,21 @@ function Details(props) {
           <div className="landlord-details">
             <div className="name-details">
               <div className="firstname-details">{host.name}</div>
-              {/* <div className="lastname-details">Dumas</div> */}
             </div>
             <img src={host.picture} alt={host.name} className="host-picture" />
           </div>
           <div className="stars-details">
-            <FaStar />
+            {filledStar.map((star, index) => (
+              <FaStar key={`star${index}`} />
+            ))}
+            {emptyStar.map((greyStar, index) => (
+              <FaRegStar key={`grey${index}`} />
+            ))}
+            {/* <FaStar />
             <FaStar />
             <FaStar />
             <FaRegStar />
-            <FaRegStar />
+          <FaRegStar /> */}
           </div>
         </div>
       </div>
