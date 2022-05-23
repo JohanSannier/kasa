@@ -10,7 +10,7 @@ function Appartment(props) {
 
   return (
     <>
-      <Carousel info={appartment.pictures} />
+      <Carousel pictures={appartment.pictures} title={appartment.title} />
       <Details info={appartment} />
     </>
   );

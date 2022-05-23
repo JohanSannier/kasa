@@ -53,17 +53,12 @@ function Details(props) {
             <img src={host.picture} alt={host.name} className="host-picture" />
           </div>
           <div className="stars-details">
-            {filledStar.map((star, index) => (
+            {filledStar.map((_star, index) => (
               <FaStar key={`star${index}`} />
             ))}
-            {emptyStar.map((greyStar, index) => (
+            {emptyStar.map((_greyStar, index) => (
               <FaRegStar key={`grey${index}`} />
             ))}
-            {/* <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaRegStar />
-          <FaRegStar /> */}
           </div>
         </div>
       </div>

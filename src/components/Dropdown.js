@@ -5,15 +5,18 @@ import arrow_down from "../assets/arrow_down.png";
 
 function Dropdown({ title, content }) {
   const [arrow, setArrow] = useState(arrow_up);
-  console.log(content);
-  let isOpen = false;
+  const [isOpen, setIsOpen] = useState(true);
+  // console.log(content);
+  // console.log(isOpen);
   let dropdown = document.querySelector(".dropdown-list");
   let typeOfContent = typeof content;
 
   function handleClick() {
-    isOpen = !isOpen;
+    setIsOpen(!isOpen);
+    console.log("====================================");
+    console.log(isOpen);
+    console.log("====================================");
     setArrow(isOpen ? arrow_up : arrow_down);
-    isOpen ? dropdown.classList.add("test") : dropdown.classList.remove("test");
   }
 
   return (
