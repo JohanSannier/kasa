@@ -1,16 +1,18 @@
 import React from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import data from "../data/data.json";
+import { useParams } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import Details from "../components/Details";
 
 function Appartment(props) {
+  const { appartmentId } = useParams();
+  const appartment = data.find((apt) => apt.id === appartmentId);
+
   return (
     <>
-      <Header />
-      <Carousel />
-      <Details />
-      <Footer />
+      <h2>{appartmentId}</h2>
+      <Carousel info={appartment.pictures} />
+      <Details info={appartment} />
     </>
   );
 }

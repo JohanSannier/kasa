@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import DropdownLarge from "../components/DropdownLarge";
 import background from "../assets/bg-apropos.png";
@@ -8,7 +6,6 @@ import background from "../assets/bg-apropos.png";
 function About(props) {
   return (
     <>
-      <Header />
       <Hero background={background} />;
       <DropdownLarge
         title="Fiabilité"
@@ -26,7 +23,6 @@ function About(props) {
         title="Responsabilité"
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quam!"
       />
-      <Footer />
     </>
   );
 }

@@ -5,17 +5,15 @@ import arrow_down from "../assets/arrow_down.png";
 
 function Dropdown({ title, content }) {
   const [arrow, setArrow] = useState(arrow_up);
-  const [list, setlist] = useState("Exemple");
-  // const equipments = props.data.map((data, index) => {
-  //   return <li key={`item ${index}`}>{data.equipments}</li>;
-  // });
+  const equipments = content.map((data, index) => {
+    return <li key={`item ${index}`}>{data}</li>;
+  });
   let isOpen = false;
   let dropdown = document.querySelector(".dropdown-list");
 
   function handleClick() {
     isOpen = !isOpen;
     setArrow(isOpen ? arrow_up : arrow_down);
-    setlist("test");
     isOpen ? dropdown.classList.add("test") : dropdown.classList.remove("test");
   }
 
@@ -23,8 +21,7 @@ function Dropdown({ title, content }) {
     <div className="dropdown-wrapper">
       <p className="dropdown-title">{title}</p>
       <img src={arrow} alt="" className="arrow-icon" onClick={handleClick} />
-      <ul className="dropdown-list">{content}</ul>
-      {list}
+      <ul className="dropdown-list">{equipments}</ul>
     </div>
   );
 }
