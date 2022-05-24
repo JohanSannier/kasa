@@ -3,5 +3,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: red solid 1px;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 5px;
+  }
 }
 /*# sourceMappingURL=Reset.css.map */

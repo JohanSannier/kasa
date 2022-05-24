@@ -4,15 +4,9 @@ import arrow_up from "../assets/arrow_up.png";
 import arrow_down from "../assets/arrow_down.png";
 
 function Dropdown({ title, content }) {
-  // Rendu conditionnel sur l'affichage de l'icone
   const [isOpen, setIsOpen] = useState(true);
-  console.log(content);
-  // console.log(isOpen);
-  let dropdown = document.querySelector(".dropdown-list");
-  // let typeOfContent = typeof content;
   const [typeOfContent, setTypeOfContent] = useState(typeof content);
 
-  console.log(typeOfContent);
   function handleClick() {
     setIsOpen(!isOpen);
   }
@@ -22,7 +16,7 @@ function Dropdown({ title, content }) {
       <p className="dropdown-title">{title}</p>
       <img
         src={isOpen ? arrow_up : arrow_down}
-        alt=""
+        alt="Voir le texte"
         className="arrow-icon"
         onClick={handleClick}
       />
