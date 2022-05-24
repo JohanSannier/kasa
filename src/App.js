@@ -14,7 +14,7 @@ function App(props) {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path=":appartmentId" element={<Appartment />} />
+          <Route path="/logement/:appartmentId" element={<Appartment />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
