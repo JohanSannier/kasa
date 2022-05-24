@@ -10,10 +10,23 @@
 
   .upper-details {
     display: flex;
+
+    @media (max-width: 768px) {
+      display: initial;
+    }
   }
 
   .left-details {
     margin-right: auto;
+  }
+
+  .right-details {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
   }
 
   .title-details {
@@ -31,6 +44,7 @@
     display: flex;
     gap: 0.6rem;
     margin-bottom: 1.5rem;
+    flex-wrap: wrap;
   }
 
   .landlord-details {

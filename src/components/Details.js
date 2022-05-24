@@ -41,8 +41,9 @@ function Details(props) {
           <p className="title-details">{title}</p>
           <p className="location-details">{location}</p>
           <div className="tag-wrapper">
-            <Tagname />
-            <Tagname />
+            {tags.map((tag, index) => (
+              <Tagname content={tag} key={`tag-${index}`} />
+            ))}
           </div>
         </div>
         <div className="right-details">
