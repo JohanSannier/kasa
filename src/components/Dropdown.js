@@ -4,7 +4,7 @@ import arrow_up from "../assets/arrow_up.png";
 import arrow_down from "../assets/arrow_down.png";
 
 function Dropdown({ title, content }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   // eslint-disable-next-line no-unused-vars
   const [typeOfContent, setTypeOfContent] = useState(typeof content);
 
