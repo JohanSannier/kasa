@@ -11,6 +11,11 @@
   margin-bottom: 2rem;
   padding: 2rem 2rem;
   border-radius: 1.5625rem;
+
+  @media (max-width: 400px) {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 .thumb {
@@ -24,8 +29,14 @@
   border-radius: 10px;
   cursor: pointer;
 
-  &&:hover {
-    filter: drop-shadow(30px 10px 4px #4444dd);
+  &:hover {
+    filter: drop-shadow(10px 10px 4px #b4b4b4);
+  }
+
+  @media (max-width: 400px) {
+    height: 255px;
+    width: 100%;
+    margin-top: initial;
   }
 
   .thumb-title {

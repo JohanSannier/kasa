@@ -11,7 +11,13 @@ nav {
   padding: 1rem 2rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  gap: 30px;
+  gap: 1.875rem;
+}
+
+@media (max-width: 435px) {
+  nav {
+    gap: 1.5rem;
+  }
 }
 
 nav img {
@@ -26,6 +32,12 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 435px) {
+  nav a {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 768px) {

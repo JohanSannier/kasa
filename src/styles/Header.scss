@@ -9,7 +9,11 @@ nav {
   padding: 1rem 2rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  gap: 30px;
+  gap: 1.875rem;
+
+  @media (max-width: 435px) {
+    gap: 1.5rem;
+  }
 
   img {
     margin-right: auto;
@@ -22,6 +26,10 @@ nav {
 
     &:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 435px) {
+      font-size: 1.3rem;
     }
   }
 

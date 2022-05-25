@@ -16,6 +16,13 @@
   border-radius: 1.5625rem;
 }
 
+@media (max-width: 400px) {
+  .location-display {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
 .thumb {
   position: relative;
   margin-top: 30px;
@@ -24,6 +31,19 @@
   height: 340px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.thumb:hover {
+  -webkit-filter: drop-shadow(10px 10px 4px #b4b4b4);
+          filter: drop-shadow(10px 10px 4px #b4b4b4);
+}
+
+@media (max-width: 400px) {
+  .thumb {
+    height: 255px;
+    width: 100%;
+    margin-top: initial;
+  }
 }
 
 .thumb .thumb-title {

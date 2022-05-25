@@ -5,6 +5,7 @@ import arrow_down from "../assets/arrow_down.png";
 
 function Dropdown({ title, content }) {
   const [isOpen, setIsOpen] = useState(true);
+  // eslint-disable-next-line no-unused-vars
   const [typeOfContent, setTypeOfContent] = useState(typeof content);
 
   function handleClick() {
