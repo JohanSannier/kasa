@@ -5,6 +5,10 @@
   width: 50%;
   position: relative;
 
+  @media (max-width: 435px) {
+    width: initial;
+  }
+
   .dropdown-title {
     background-color: $main-color;
     color: $white-text;

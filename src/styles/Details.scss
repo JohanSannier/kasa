@@ -77,4 +77,10 @@
 .bottom-details {
   display: flex;
   gap: 4.75rem;
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+  @media (max-width: 435px) {
+    flex-direction: column;
+  }
 }

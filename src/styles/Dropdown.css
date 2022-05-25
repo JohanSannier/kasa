@@ -4,6 +4,12 @@
   position: relative;
 }
 
+@media (max-width: 435px) {
+  .dropdown-wrapper {
+    width: initial;
+  }
+}
+
 .dropdown-wrapper .dropdown-title {
   background-color: #ff6060;
   color: #ffffff;

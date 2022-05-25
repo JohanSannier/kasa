@@ -97,4 +97,19 @@
   display: flex;
   gap: 4.75rem;
 }
+
+@media (max-width: 768px) {
+  .bottom-details {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 435px) {
+  .bottom-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=Details.css.map */

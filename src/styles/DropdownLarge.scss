@@ -7,6 +7,10 @@
   margin: auto;
   margin-bottom: 2rem;
 
+  @media (max-width: 435px) {
+    width: 90%;
+  }
+
   .dropdown-large-title {
     background-color: $main-color;
     color: $white-text;

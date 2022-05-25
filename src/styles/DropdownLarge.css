@@ -6,6 +6,12 @@
   margin-bottom: 2rem;
 }
 
+@media (max-width: 435px) {
+  .dropdown-large-wrapper {
+    width: 90%;
+  }
+}
+
 .dropdown-large-wrapper .dropdown-large-title {
   background-color: #ff6060;
   color: #ffffff;

@@ -9,7 +9,7 @@ footer {
   padding: 2rem;
 
   img {
-    width: 122px;
+    width: 7.5rem;
   }
 
   p {
@@ -17,5 +17,9 @@ footer {
     font-family: $body-font;
     font-size: 1.5rem;
     font-weight: 500;
+
+    @media (max-width: 435px) {
+      font-size: initial;
+    }
   }
 }

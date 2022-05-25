@@ -15,7 +15,7 @@ footer {
 }
 
 footer img {
-  width: 122px;
+  width: 7.5rem;
 }
 
 footer p {
@@ -23,5 +23,11 @@ footer p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+@media (max-width: 435px) {
+  footer p {
+    font-size: initial;
+  }
 }
 /*# sourceMappingURL=Footer.css.map */
