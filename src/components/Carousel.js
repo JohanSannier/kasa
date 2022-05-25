@@ -28,8 +28,15 @@ function Carousel(props) {
 
   return (
     <div className="carousel-wrapper">
-      <FaChevronLeft className="previous-photo" onClick={handleClickPrevious} />
-      <FaChevronRight className="next-photo" onClick={handleClickNext} />
+      {props.pictures.length !== 1 && (
+        <>
+          <FaChevronLeft
+            className="previous-photo"
+            onClick={handleClickPrevious}
+          />
+          <FaChevronRight className="next-photo" onClick={handleClickNext} />
+        </>
+      )}
       <img
         src={props.pictures[currentIndex]}
         alt={`${props.title}`}
