@@ -36,6 +36,14 @@
     width: 100%;
     margin-top: initial;
   }
+  @media screen and (min-width: 1441px) {
+    height: 17em;
+    width: 17rem;
+  }
+  @media screen and (min-width: 2560px) {
+    height: 20rem;
+    width: 20rem;
+  }
 
   .thumb-title {
     position: absolute;

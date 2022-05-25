@@ -31,7 +31,7 @@
 
   .title-details {
     font-weight: 500;
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   .location-details {
@@ -57,6 +57,7 @@
       font-weight: 500;
       margin-right: 0.625rem;
       line-height: 1.5rem;
+      width: 50%;
     }
 
     .host-picture {
@@ -70,6 +71,20 @@
     svg {
       font-size: 1.5rem;
       margin-right: 0.5rem;
+
+      @media (max-width: 1080px) {
+        font-size: 1.4rem;
+        margin-right: 0.1rem;
+      }
+
+      @media (max-width: 810px) {
+        font-size: 1.3rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+      }
     }
   }
 }
@@ -79,8 +94,6 @@
   gap: 4.75rem;
   @media (max-width: 768px) {
     gap: 1rem;
-  }
-  @media (max-width: 435px) {
     flex-direction: column;
   }
 }

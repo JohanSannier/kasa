@@ -31,11 +31,23 @@
 .dropdown-large-wrapper .dropwdown-large-text {
   position: relative;
   z-index: -1;
-  margin-top: -2em;
+  margin-top: -1.5rem;
   color: #ff6060;
   padding: 40px 20px 20px;
   background-color: #f6f6f6;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+@media screen and (min-width: 1440px) {
+  .dropdown-large-wrapper .dropwdown-large-text {
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .dropdown-large-wrapper .dropwdown-large-text {
+    margin-top: -0.5rem;
+  }
 }
 /*# sourceMappingURL=DropdownLarge.css.map */

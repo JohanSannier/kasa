@@ -46,6 +46,20 @@
   }
 }
 
+@media screen and (min-width: 1441px) {
+  .thumb {
+    height: 17em;
+    width: 17rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .thumb {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
 .thumb .thumb-title {
   position: absolute;
   bottom: 0;

@@ -28,11 +28,17 @@
   .dropwdown-large-text {
     position: relative;
     z-index: -1;
-    margin-top: -2em;
+    margin-top: -1.5rem;
     color: $main-color;
     padding: 40px 20px 20px;
     background-color: $grey-bg;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    @media screen and (min-width: 1440px) {
+      margin-top: -1rem;
+    }
+    @media screen and (min-width: 2560px) {
+      margin-top: -0.5rem;
+    }
   }
 }

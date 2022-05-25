@@ -4,7 +4,7 @@
   position: relative;
 }
 
-@media (max-width: 435px) {
+@media (max-width: 768px) {
   .dropdown-wrapper {
     width: initial;
   }
@@ -37,6 +37,18 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   line-height: 1.6rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .dropdown-wrapper .dropdown-list {
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .dropdown-wrapper .dropdown-list {
+    margin-top: -0.5rem;
+  }
 }
 
 .dropdown-wrapper li {

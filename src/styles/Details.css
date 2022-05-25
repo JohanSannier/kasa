@@ -41,7 +41,7 @@
 
 .details-wrapper .title-details {
   font-weight: 500;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 .details-wrapper .location-details {
@@ -75,6 +75,7 @@
   font-weight: 500;
   margin-right: 0.625rem;
   line-height: 1.5rem;
+  width: 50%;
 }
 
 .details-wrapper .landlord-details .host-picture {
@@ -91,6 +92,26 @@
   margin-right: 0.5rem;
 }
 
+@media (max-width: 1080px) {
+  .details-wrapper .stars-details svg {
+    font-size: 1.4rem;
+    margin-right: 0.1rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .details-wrapper .stars-details svg {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .details-wrapper .stars-details svg {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
 .bottom-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,11 +122,6 @@
 @media (max-width: 768px) {
   .bottom-details {
     gap: 1rem;
-  }
-}
-
-@media (max-width: 435px) {
-  .bottom-details {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
